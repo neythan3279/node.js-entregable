@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>higt University</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link href="archiivos/css/main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--navrbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toogle navigation">
+                    
+               <span class="navbar-toggle-icon"></span>
+           </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html"> cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eliminar.html">Eliminar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registrarce</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center mt-5">
+        <form style="max-width:480px;margin:auto;">
+            <img class="mt-4 mb-4" src="img/logo.png" heigt="72" alt="">
+            <h1 class="h3 mb-3 font-weight-normal">llena los todos campos </h1>
+            <label for="name" class="sr-only">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Ingrese su nombre" required autofocus>
+            <label for="name" class="sr-only">Segundo Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Ingrese su segundo nombre" required autofocus>
+            <label for="name" class="sr-only">apellido</label>
+            <input type="emailAdress" id="Email" class="form-control" placeholder="apellidos" required autofocus>
+            <label for="name" class="sr-only">Email</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Ingrese un emailAdress" required autofocus>
+            <lable for="password" calss="sr-only">Cedula</lable>
+            <input tupe="password" id="password" placeholder="cedula" class="form-control">
+            <!--info curso-->
+            <h1 class="h3 mb-3 font-weight-normal">Informacion sobre el curso que te interesa</h1>
+            <input tupe="password" id="password" placeholder="Nombre" class="form-control">
+            <input tupe="password" id="password" placeholder="codigo" class="form-control">
+            <h2 class="h3 mb-3 font-weight-normal">modalidad</h2>
+            <select name="select" placeholder="modalidad">
+             <option value="value1">virtual</option>
+             <option value="value2" selected>presencial</option>
+              </select>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me">remember me   
+              </label>
+
+            </div>
+            <div class="mt-3">
+                <button class="btn btn-lg btn-primary btn-block">Registrar</button>
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
