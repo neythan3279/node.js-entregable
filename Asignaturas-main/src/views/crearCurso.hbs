@@ -1,0 +1,35 @@
+{{>header}}
+<div class="row pt-5">
+    <h3 class="text-center pb-5 pt-5 h1"> Crear Curso</h3>
+</div>
+
+<div class="text-center mt-5">
+    <form style="max-width:580px;margin:auto;" action="/CursoCAdmin" method="POST">
+        <h1 class="h3 mb-3 font-weight-normal">Llena los todos campos</h1>
+        <label for="name" class="sr-only">Nombre del nuevo curso</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="nombre" required autofocus>
+        <input type="number" id="codigo" name="codigo" class="form-control" placeholder="codigo para el curso - ej: 123" required autofocus>
+        <input type="text" id="profe" name="profe" class="form-control" placeholder="Profesor a cargo" required
+            autofocus>
+
+        <input type="number" name="ccProfe" id="ccProfe" placeholder="cedula de el docente" class="form-control">
+        <label for="floatingTextarea">Descripcion </label>
+        <textarea class="form-control" name="desc" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+
+        <!--info curso-->
+        <input type="number" id="costo" name="costo" class="form-control" placeholder="Costo" required autofocus>
+        <h2 class="h3 mb-3 font-weight-normal">modalidad</h2>
+        <select name="modalidad" placeholder="modalidad">
+            <option value="virtual">Virtual</option>
+            <option value="presencial" selected>Presencial</option>
+        </select>
+        <input type="hidden" id="estado" name="estado" class="form-control" value="Disponible">
+        <input type="number" id="duracion" name="duracion" class="form-control" placeholder="Duracion" required autofocus>
+
+        <div class="mt-3">
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Guardar Curso</button>
+        </div>
+    </form>
+</div>
+
+{{>footer}}
